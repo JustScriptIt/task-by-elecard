@@ -1,0 +1,56 @@
+.cardslist {
+    margin: 120px 0 60px;
+    padding: 0 50px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    flex-direction: column;
+}
+
+.group {
+    position: relative;
+    width: 100%;
+    transition: .5s;
+}
+
+.group__title {
+    font-size: 32px;
+    margin-left: 40px;
+}
+
+.group__block {
+    overflow: hidden;
+    height: 0;
+    transition: .4s;
+}
+
+.visible {
+    height: 100%;
+}
+
+.button {
+    padding: 0;
+    position: absolute;
+    height: 20px;
+    width: 20px;
+    left: 0;
+    top: 10px;
+    background: var(--main-color);
+    border: none;
+    color: var(--text-color-light);
+    cursor: pointer;
+    box-shadow: 3px 3px var(--text-color);
+}
+
+.button:hover {
+    left: 1px;
+    top: 11px;
+    box-shadow: 2px 2px var(--text-color);
+}
+
+.button:active {
+    left: 3px;
+    top: 13px;
+    box-shadow: 2px 2px var(--text-color)none;
+}

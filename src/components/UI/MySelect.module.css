@@ -1,0 +1,70 @@
+@import '../../styles/variables.css';
+
+.sorter {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.sorter_button {
+    margin-right: 10px;
+}
+
+.sorter_button input[type=radio] {
+    display: none;
+}
+
+.sorter_button label {
+    display: inline-block;
+    cursor: pointer;
+    position: relative;
+    padding-left: 28px;
+    margin-right: 0;
+    line-height: 20px;
+    user-select: none;
+}
+
+.sorter_button label:after {
+    content: "";
+    display: flex;
+    width: 14px;
+    height: 14px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    border: 2px solid var(--text-color);
+}
+
+/* Checked */
+.sorter_button input[type=radio]:checked + label:before,  .sorter_button input[type=radio]:not(:checked) + label:before{
+    content: "";
+    position: absolute;
+    top: 4px;
+    left: 4px;
+    transition: .1s;
+    opacity: 0;
+    width: 10px;
+    height: 10px;
+}
+
+.sorter_button input[type=radio]:checked + label:before {
+    content: "";
+    display: flex;
+    width: 18px;
+    height: 18px;
+    position: absolute;
+    top: 4px;
+    left: 4px;
+    background: var(--accent-color);
+    opacity: 1;
+}
+
+/* Hover */
+.sorter_button label:hover:before {
+    filter: brightness(120%);
+}
+
+/* Disabled */
+.sorter_button input[type=radio]:disabled + label:before {
+    filter: grayscale(100%);
+}

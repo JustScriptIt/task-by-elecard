@@ -1,0 +1,27 @@
+@import '../../styles/variables.css';
+
+.button {
+    position: relative;
+    border: 2px solid var(--text-color);
+    padding: 5px;
+    font-size: 14px;
+    background: none;
+    cursor: pointer;
+    transform: translate(-3px, -3px);
+    box-shadow: 4px 4px var(--text-color);
+}
+
+.button:not(:last-child) {
+    margin-right: 10px;
+}
+
+.button:hover {
+    transform: translate(-2px, -2px);
+    box-shadow: 3px 3px var(--text-color);
+}
+
+.button:active {
+    transform: translate(0, 0);
+    box-shadow: 4px 4px var(--accent-color), 2px 2px var(--background-color) inset;
+    background: var(--accent-color);
+}

@@ -1,0 +1,96 @@
+@import "../styles/variables.css";
+.card {
+    position: relative;
+    height: 200px;
+    width: 100%;
+    border: 2px solid var(--text-color);
+}
+
+.card__wrapper {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.card__image {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.card__image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: .4s;
+}
+
+.card__wrapper:hover img {
+    transform: scale(1.5);
+}
+
+.card__button {
+    padding: 0;
+    position: absolute;
+    height: 20px;
+    width: 20px;
+    right: -10px;
+    top: -10px;
+    background: var(--main-color);
+    border: none;
+    color: var(--text-color-light);
+    cursor: pointer;
+    box-shadow: 3px 3px var(--text-color);
+}
+
+.card__button:hover {
+    right: -11px;
+    top: -9px;
+    box-shadow: 2px 2px var(--text-color);
+}
+
+.card__button:active {
+    right: -13px;
+    top: -7px;
+    box-shadow: 2px 2px var(--text-color)none;
+}
+
+.card__description {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: start;
+    justify-content: center;
+    flex-direction: column;
+    padding: 10px;
+    transform: translateX(-100%);
+    width: 100%;
+    height: 100%;
+    background: var(--accent-color);
+    opacity: .7;
+    transition: .4s;
+}
+
+.card__wrapper:hover .card__description {
+    transform: translateX(0);
+}
+
+@media screen and (max-width:1600px) {
+    .card {
+    }
+}
+
+@media screen and (max-width:1366px) {
+    .card {
+        height: 150px;
+    }
+}
+
+@media screen and (max-width:1024px) {
+    .card {
+        height: 120px;
+    }
+}

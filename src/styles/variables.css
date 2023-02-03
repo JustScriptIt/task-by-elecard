@@ -1,0 +1,11 @@
+:root {
+    --main-color: #CA1F3D;
+    --background-color: #FFFFFF;
+    --accent-color: #FFBE00;
+    --text-color: #25182E;
+    --text-color-light: var(--background-color);
+
+    --header-color: var(--main-color);
+
+    --footer-color: var(--text-color);
+}

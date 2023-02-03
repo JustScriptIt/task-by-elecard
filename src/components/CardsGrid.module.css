@@ -1,0 +1,54 @@
+* {
+    box-sizing: border-box;
+}
+
+.cardsgrid {
+    margin: 120px 0 60px;
+    padding: 0 50px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    gap: 30px;
+    justify-items: center;
+    align-items: center;
+}
+
+@media screen and (max-width:1600px) {
+    .cardsgrid {
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    }
+}
+
+@media screen and (max-width:1366px) {
+    .cardsgrid {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        gap: 15px;
+    }
+}
+
+@media screen and (max-width:1024px) {
+    .cardsgrid {
+
+    }
+}
+
+@media screen and (max-width:768px) {
+    .cardsgrid {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+@media screen and (max-width:600px) {
+    .cardsgrid {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media screen and (max-width:480px) {
+    .cardsgrid {
+    }
+}
+
+@media screen and (max-width:320px) {
+    .cardsgrid {
+    }
+}

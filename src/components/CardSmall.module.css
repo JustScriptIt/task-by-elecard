@@ -1,0 +1,126 @@
+@import "../styles/variables.css";
+.card {
+    position: relative;
+    margin-left: 40px;
+    height: 50px;
+    width: 20%;
+    border: 2px solid var(--text-color);
+    margin-bottom: 5px;
+}
+
+.card__wrapper {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.card__image {
+    position: relative;
+    width: 40%;
+    height: 100%;
+    overflow: hidden;
+    border-right: 2px solid var(--text-color);
+    cursor: pointer;
+}
+
+.card__image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: .4s;
+}
+
+.card__description {
+    height: 100%;
+    width: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    background: var(--accent-color);
+    transition: .4s;
+}
+
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+}
+
+.modal__background {
+    background: var(--text-color);
+    opacity: .8;
+    width: 100%;
+    height: 100%;
+    z-index: 3;
+}
+
+.modal__content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: auto;
+    height: auto;
+    border: 2px solid var(--text-color);
+}
+
+.modal__content img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: .4s;
+}
+
+.modal__button {
+    padding: 0;
+    position: absolute;
+    height: 30px;
+    width: 30px;
+    right: -10px;
+    top: -10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--main-color);
+    border: none;
+    color: var(--text-color-light);
+    z-index: 2;
+    cursor: pointer;
+    box-shadow: 3px 3px var(--text-color);
+}
+
+.modal__button:hover {
+    right: -11px;
+    top: -9px;
+    box-shadow: 2px 2px var(--text-color);
+}
+
+.modal__button:active {
+    right: -13px;
+    top: -7px;
+    box-shadow: 2px 2px var(--text-color)none;
+}
+
+
+.modal__description {
+    padding: 0;
+    position: absolute;
+    height: 80%;
+    width: 250px;
+    right: 10%;
+    bottom: 10%;
+    background: var(--text-color);
+    border: none;
+    color: var(--text-color-light);
+}
