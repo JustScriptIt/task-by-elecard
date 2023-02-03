@@ -5,10 +5,12 @@ const Footer = () => {
     return (
         <footer>
             <p>Задание выполнил Коршунов Кирилл Вячеславович</p>
-            <img
-                src={logo}
-                alt="Логотип Коршунова Кирилла"
-            />
+            <a href="https://kirillkorshunov.ru/">
+                <img
+                    src={logo}
+                    alt="Логотип Коршунова Кирилла"
+                />
+            </a>
         </footer>
     )
 }

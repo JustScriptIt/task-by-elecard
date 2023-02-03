@@ -20,6 +20,7 @@
     position: relative;
     padding-left: 28px;
     margin-right: 0;
+    font-size: var(--radio-text-size);
     line-height: 20px;
     user-select: none;
 }
@@ -27,8 +28,8 @@
 .sorter_button label:after {
     content: "";
     display: flex;
-    width: 14px;
-    height: 14px;
+    width: var(--radio-text-size);
+    height: var(--radio-text-size);
     position: absolute;
     left: 0;
     top: 0;
@@ -50,8 +51,8 @@
 .sorter_button input[type=radio]:checked + label:before {
     content: "";
     display: flex;
-    width: 18px;
-    height: 18px;
+    width: calc(var(--radio-text-size) + 4px);
+    height: calc(var(--radio-text-size) + 4px);
     position: absolute;
     top: 4px;
     left: 4px;

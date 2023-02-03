@@ -4,7 +4,7 @@
     position: relative;
     border: 2px solid var(--text-color);
     padding: 5px;
-    font-size: 14px;
+    font-size: var(--button-text-size);
     background: none;
     cursor: pointer;
     transform: translate(-3px, -3px);

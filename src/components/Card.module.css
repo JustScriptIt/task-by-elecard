@@ -65,6 +65,7 @@
     align-items: start;
     justify-content: center;
     flex-direction: column;
+    font-size: var(--card-text-size);
     padding: 10px;
     transform: translateX(-100%);
     width: 100%;

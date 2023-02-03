@@ -6,6 +6,41 @@
     --text-color-light: var(--background-color);
 
     --header-color: var(--main-color);
-
     --footer-color: var(--text-color);
+
+/*    font-size    */
+    --button-text-size: 14px;
+    --radio-text-size: 16px;
+    --card-text-size: 16px;
+    --category-text-size: 32px;
+}
+
+@media screen and (max-width:1600px) {
+}
+
+@media screen and (max-width:1366px) {
+}
+
+@media screen and (max-width:1200px) {
+    :root {
+        --radio-text-size: 12px;
+        --button-text-size: 10px;
+        --category-text-size: 24px;
+        --card-text-size: 12px;
+    }
+}
+
+@media screen and (max-width:1024px) {
+}
+
+@media screen and (max-width:768px) {
+}
+
+@media screen and (max-width:600px) {
+}
+
+@media screen and (max-width:480px) {
+}
+
+@media screen and (max-width:320px) {
 }

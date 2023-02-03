@@ -1,3 +1,4 @@
+@import "../styles/variables.css";
 .cardslist {
     margin: 120px 0 60px;
     padding: 0 50px;
@@ -15,7 +16,7 @@
 }
 
 .group__title {
-    font-size: 32px;
+    font-size: var(--category-text-size);
     margin-left: 40px;
 }
 
